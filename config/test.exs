@@ -20,9 +20,6 @@ config :desafio_oinc, DesafioOincWeb.Endpoint,
   secret_key_base: "wy+JolSSqA0J9xgK50TAAbxio1+/bxc+JzFW5YNf4F56zSllNvJJiiVzMqkz9JYW",
   server: false
 
-# In test we don't send emails.
-config :desafio_oinc, DesafioOinc.Mailer, adapter: Swoosh.Adapters.Test
-
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
 
