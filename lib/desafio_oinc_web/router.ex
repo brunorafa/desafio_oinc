@@ -20,6 +20,16 @@ defmodule DesafioOincWeb.Router do
     get "/", PageController, :home
   end
 
+  scope "/api" do
+    pipe_through :api
+
+    if Mix.env() == :dev do
+      forward "/graphiql", Absinthe.Plug.GraphiQL, schema: DesafioOinc.Schema
+    end
+
+    forward "/", Absinthe.Plug, schema: DesafioOinc.Schema
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", DesafioOincWeb do
   #   pipe_through :api
