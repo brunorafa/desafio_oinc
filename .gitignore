@@ -35,3 +35,5 @@ desafio_oinc-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore postgres data
+/_postgres-data

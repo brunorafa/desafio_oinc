@@ -50,7 +50,10 @@ defmodule DesafioOinc.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+
+      # static analysis
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 
