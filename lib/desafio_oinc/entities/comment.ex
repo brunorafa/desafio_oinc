@@ -1,4 +1,5 @@
 defmodule DesafioOinc.Entities.Comment do
+  @moduledoc false
   use Ecto.Schema
 
   alias DesafioOinc.Entities.Post

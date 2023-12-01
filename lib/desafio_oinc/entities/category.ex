@@ -1,4 +1,5 @@
 defmodule DesafioOinc.Entities.Category do
+  @moduledoc false
   use Ecto.Schema
   import Ecto.Changeset
 

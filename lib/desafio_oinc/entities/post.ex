@@ -1,4 +1,5 @@
 defmodule DesafioOinc.Entities.Post do
+  @moduledoc false
   use Ecto.Schema
 
   alias DesafioOinc.Entities.Category
