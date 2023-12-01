@@ -55,7 +55,10 @@ defmodule DesafioOinc.MixProject do
       {:absinthe, "~> 1.7"},
       {:absinthe_plug, "~> 1.5"},
       # static analysis
-      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      # Commanded
+      {:commanded, "~> 1.4"},
+      {:commanded_ecto_projections, "~> 1.3"}
     ]
   end
 
