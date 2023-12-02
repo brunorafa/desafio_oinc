@@ -1,4 +1,4 @@
-defmodule DesafioOinc.Entities.Post do
+defmodule DesafioOinc.Posts.Schemas.Post do
   @moduledoc false
   use Ecto.Schema
 

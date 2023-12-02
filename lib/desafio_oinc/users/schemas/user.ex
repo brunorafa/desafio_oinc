@@ -1,8 +1,8 @@
-defmodule DesafioOinc.Entities.User do
+defmodule DesafioOinc.Users.Schemas.User do
   @moduledoc false
   use Ecto.Schema
 
-  alias DesafioOinc.Entities.Post
+  alias DesafioOinc.Posts.Schemas.Post
 
   import Ecto.Changeset
 
