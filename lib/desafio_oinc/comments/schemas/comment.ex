@@ -1,9 +1,9 @@
-defmodule DesafioOinc.Entities.Comment do
+defmodule DesafioOinc.Comments.Schemas.Comment do
   @moduledoc false
   use Ecto.Schema
 
-  alias DesafioOinc.Entities.Post
-  alias DesafioOinc.Entities.User
+  alias DesafioOinc.Posts.Schemas.Post
+  alias DesafioOinc.Users.Schemas.User
 
   import Ecto.Changeset
 

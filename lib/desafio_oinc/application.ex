@@ -17,6 +17,11 @@ defmodule DesafioOinc.Application do
       # Start a worker by calling: DesafioOinc.Worker.start_link(arg)
       # {DesafioOinc.Worker, arg},
       # Start to serve requests, typically the last entry
+      DesafioOinc.App,
+      DesafioOinc.Posts.Supervisor,
+      DesafioOinc.Users.Supervisor,
+      DesafioOinc.Comments.Supervisor,
+      DesafioOinc.Categories.Supervisor,
       DesafioOincWeb.Endpoint
     ]
 

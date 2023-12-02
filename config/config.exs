@@ -52,6 +52,17 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+# Commanded
+config :desafio_oinc, DesafioOinc.App,
+  event_store: [
+    adapter: Commanded.EventStore.Adapters.EventStore,
+    event_store: DesafioOinc.EventStore
+  ],
+  pubsub: :local,
+  registry: :local
+
+config :desafio_oinc, event_stores: [DesafioOinc.EventStore]
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"

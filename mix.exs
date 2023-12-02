@@ -58,7 +58,8 @@ defmodule DesafioOinc.MixProject do
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       # Commanded
       {:commanded, "~> 1.4"},
-      {:commanded_ecto_projections, "~> 1.3"}
+      {:commanded_ecto_projections, "~> 1.3"},
+      {:commanded_eventstore_adapter, "~> 1.4"}
     ]
   end
 

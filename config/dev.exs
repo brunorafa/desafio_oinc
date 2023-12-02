@@ -10,6 +10,22 @@ config :desafio_oinc, DesafioOinc.Repo,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
+config :desafio_oinc, DesafioOinc.EventStore,
+  serializer: Commanded.Serialization.JsonSerializer,
+  username: "some_user",
+  password: "some_password",
+  database: "eventstore_dev",
+  hostname: "localhost",
+  pool_size: 10
+
+config :desafio_oinc, DesafioOinc.App,
+  event_store: [
+    adapter: Commanded.EventStore.Adapters.InMemory,
+    event_store: DesafioOinc.EventStore
+  ],
+  pubsub: :local,
+  registry: :local
+
 # For development, we disable any cache and enable
 # debugging and code reloading.
 #
